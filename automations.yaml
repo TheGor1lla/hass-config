@@ -1,1 +1,7 @@
-[]
+- id: backup_github
+  alias: "backup_github"
+  trigger:
+  - platform: time
+    at: "17:30:00"
+  action:
+    - service: shell_command.backup_github
