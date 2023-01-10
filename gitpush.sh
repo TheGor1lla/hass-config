@@ -9,5 +9,5 @@ git add .
 TODAY=$(date +"%Y-%m-%d")
 
 git commit -m "[${TODAY}] scheduled backup"
-yes yes | GIT_SSH_COMMAND="ssh -i /config/.ssh/id_ed25519" git push origin main
+GIT_SSH_COMMAND="ssh -i /config/.ssh/id_ed25519 -o UserKnownHostsFile=/config/.ssh/known_hosts" git push origin main
 exit
