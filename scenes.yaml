@@ -1,0 +1,8 @@
+- id: '1673382112123'
+  name: Taglicht
+  entities:
+    binary_sensor.yeelight_ceiling4_0x112eadff_nightlight:
+      friendly_name: Yeelight Ceiling4 0x112eadff nightlight
+      state: 'on'
+  icon: mdi:brightness-7
+  metadata: {}
